@@ -19,7 +19,7 @@ public class Booking {
         this.end = end;
         this.isVacation = isVacation;
     }
-    // atributy třídy Bookings. U každé rezervace je jeden host hlavní a další
+    // atributy třídy Booking. U každé rezervace je jeden host hlavní a další
     // případné osoby v pokoji jsou jen jeho spolubydlící (spolubydlící1 a
     // a spolubydlící2). Viz též komentář ve třídě Main.
 

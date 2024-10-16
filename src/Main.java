@@ -47,7 +47,7 @@ public class Main {
                      +", "+listOfBookings.get(1).getRoomMate2().getGuestFirstname()+" "+listOfBookings.get(1).getRoomMate2().getGuestSurname()
                      +", "+listOfBookings.get(1).getStart()+", "+listOfBookings.get(1).getEnd()+", "+listOfBookings.get(1).isVacation());
         // Zkouška různého způsobu výpisu zadaných rezervací. Nejrozumější je
-        // výpis ze seznamu pomocí cyklu for each (viz níže).
+        // výpis ze seznamu rezervací pomocí cyklu for each (viz níže).
 
         for (Booking bookingItem : listOfBookings) {
             System.out.println(bookingItem.getRoom().getRoomNumber()
