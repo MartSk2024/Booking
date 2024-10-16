@@ -21,7 +21,7 @@ public class Booking {
     }
     // atributy třídy Booking. U každé rezervace je jeden host hlavní a další
     // případné osoby v pokoji jsou jen jeho spolubydlící (spolubydlící1 a
-    // a spolubydlící2). Viz též komentář ve třídě Main.
+    // a spolubydlící2). Viz také komentář ve třídě Main.
 
     public Room getRoom() {
         return room;

@@ -34,6 +34,7 @@ public class Main {
         listOfBookings.add(booking2);
 
         List<Booking> copyOfBookings = new ArrayList<Booking>(listOfBookings);
+        // Vytvoření kopie seznamu rezervací pro procvičení.
 
         System.out.println(listOfBookings.get(0).getRoom().getRoomNumber()
                      +", "+listOfBookings.get(0).getGuest().getGuestFirstname()+" "+listOfBookings.get(0).getGuest().getGuestSurname()
