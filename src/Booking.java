@@ -1,8 +1,6 @@
 import java.time.LocalDate;
-import java.util.ArrayList;
-import java.util.List;
 
-public class Bookings {
+public class Booking {
     private Room room;
     private Guest guest;
     private Guest roomMate1;
@@ -11,8 +9,8 @@ public class Bookings {
     private LocalDate end;
     private boolean isVacation;
 
-    public Bookings(Room room, Guest guest, Guest roomMate1, Guest roomMate2, LocalDate start,
-                    LocalDate end, boolean isVacation) {
+    public Booking(Room room, Guest guest, Guest roomMate1, Guest roomMate2, LocalDate start,
+                   LocalDate end, boolean isVacation) {
         this.room = room;
         this.guest = guest;
         this.roomMate1 = roomMate1;

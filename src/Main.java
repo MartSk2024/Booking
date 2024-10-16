@@ -26,14 +26,14 @@ public class Main {
         Room room2 = new Room(2);
         Room room3 = new Room(3, BigDecimal.valueOf(2400));
 
-        Bookings booking1 = new Bookings(room1, guest1, guest0, guest0, LocalDate.of(2021, 7, 15), LocalDate.of(2021, 7, 26), false);
-        Bookings booking2 = new Bookings(room3, guest1, guest2, guest0, LocalDate.of(2021, 9, 7), LocalDate.of(2021, 9, 14), true);
+        Booking booking1 = new Booking(room1, guest1, guest0, guest0, LocalDate.of(2021, 7, 15), LocalDate.of(2021, 7, 26), false);
+        Booking booking2 = new Booking(room3, guest1, guest2, guest0, LocalDate.of(2021, 9, 7), LocalDate.of(2021, 9, 14), true);
 
-        List<Bookings> listOfBookings = new ArrayList<>();
+        List<Booking> listOfBookings = new ArrayList<>();
         listOfBookings.add(booking1);
         listOfBookings.add(booking2);
 
-        List<Bookings> copyOfBookings = new ArrayList<Bookings>(listOfBookings);
+        List<Booking> copyOfBookings = new ArrayList<Booking>(listOfBookings);
 
         System.out.println(listOfBookings.get(0).getRoom().getRoomNumber()
                      +", "+listOfBookings.get(0).getGuest().getGuestFirstname()+" "+listOfBookings.get(0).getGuest().getGuestSurname()
@@ -46,8 +46,10 @@ public class Main {
                      +", "+listOfBookings.get(1).getRoomMate1().getGuestFirstname()+" "+listOfBookings.get(1).getRoomMate1().getGuestSurname()
                      +", "+listOfBookings.get(1).getRoomMate2().getGuestFirstname()+" "+listOfBookings.get(1).getRoomMate2().getGuestSurname()
                      +", "+listOfBookings.get(1).getStart()+", "+listOfBookings.get(1).getEnd()+", "+listOfBookings.get(1).isVacation());
+        // Zkouška různého způsobu výpisu zadaných rezervací. Nejrozumější je
+        // výpis ze seznamu pomocí cyklu for each (viz níže).
 
-        for (Bookings bookingItem : listOfBookings) {
+        for (Booking bookingItem : listOfBookings) {
             System.out.println(bookingItem.getRoom().getRoomNumber()
                          +", "+bookingItem.getGuest().getGuestFirstname()+" "+bookingItem.getGuest().getGuestSurname()
                          +", "+bookingItem.getRoomMate1().getGuestFirstname()+" "+bookingItem.getRoomMate1().getGuestSurname()
